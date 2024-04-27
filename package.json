@@ -12,6 +12,7 @@
   "devDependencies": {
     "buffer": "^5.5.0||^6.0.0",
     "crypto-browserify": "^3.12.0",
+    "esmify": "^2.1.1",
     "events": "^3.1.0",
     "process": "^0.11.10",
     "stream-browserify": "^3.0.0",
