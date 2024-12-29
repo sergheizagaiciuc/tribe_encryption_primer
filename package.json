@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "browserify ./js/index.js > browserify-index.js & browserify ./js/endecrypt-v3.js > browserify-endecrypt-v3.js & parcel index.html",
+    "bundle": "node bundle.js",
+    "start": "parcel index.html",
+    "qqqstart": "browserify ./js/index.js > browserify-index.js & browserify ./js/endecrypt-v3.js > browserify-endecrypt-v3.js & parcel index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Maria Chitul",

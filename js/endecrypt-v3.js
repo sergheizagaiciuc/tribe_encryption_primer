@@ -56,7 +56,7 @@ function startDecrypt(e)
 
         const result = decryptV3(encryptedData, encryptedSessionKey, privateKey);
 
-        document.getElementById("result").value = result;
+        document.getElementById("result").value = JSON.stringify(result);
     }
     catch(e)
     {
