@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decryption, MODE 1</title>
+    <title>Encryption, MODE 2</title>
 	<link rel="stylesheet" href="./css/index.css" />
 </head>
 <body>
-	<h1>Request Decryption, MODE1</h1>
+	<h1>Request Encryption, MODE2</h1>
     <div style="text-align:center"><a href="index.html">&lt; Index</a></div>
     <form>
 		<div class="formfield">
@@ -16,20 +16,23 @@
 			<button id="useExampleKey">Use example key</button>
 		</div>
 		<div class="formfield">
-			<label for="x-sign">x-sign header value</label>
-			<textarea id="x-sign" rows="5"></textarea>
+			<label for="request">Request</label>
+			<textarea id="request" rows="5"></textarea>
+			<button id="useExampleRequest">Use example request</button>
 		</div>
 		<div class="formfield">
-			<label for="enccontent">encrypted content</label>
-			<textarea id="enccontent" rows="5"></textarea>
-		</div>
-		<div class="formfield">
-			<button id="decrypt-mode1">Decrypt</button>
+			<button id="encrypt-mode2">Encrypt</button>
 		</div>
 		<hr />
 		<div class="formfield">
+			<label for="x-sign">x-sign</label>
+			<textarea id="x-sign" rows="3"></textarea>
+			<button class="copy" id="copyxsign" type="image"><img src="img/copy-to-clipboard-icon-1.jpg" /></button>
+		</div>
+		<div class="formfield">
 			<label for="body">body</label>
 			<textarea id="body" rows="3"></textarea>
+			<button class="copy" id="copybody" type="image"><img src="img/copy-to-clipboard-icon-1.jpg" /></button>
 		</div>
 	</form>
 	
