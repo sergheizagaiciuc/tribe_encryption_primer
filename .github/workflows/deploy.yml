@@ -29,5 +29,4 @@ jobs:
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GH_PAGES_DEPLOY_GITHUB_TOKEN }}
-          publish_branch: main
           publish_dir: ../dist
