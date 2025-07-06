@@ -24,6 +24,13 @@ jobs:
       - name: Build project
         run: yarn bundle && yarn build 
 
+      - name: Show dist contents
+        run: |
+          echo "Working directory:"
+          pwd
+          echo "Files in ./dist:"
+          ls -la ./dist
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         if: github.ref == 'refs/heads/main'
