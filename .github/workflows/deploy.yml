@@ -24,6 +24,9 @@ jobs:
       - name: Build project
         run: yarn bundle && yarn build 
 
+      - name: Add .nojekyll to dist
+        run: echo > ./dist/.nojekyll
+
       - name: Show dist contents
         run: |
           echo "Working directory:"
