@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "bundle": "node bundle.js",
-    "build": "node bundle.js && parcel build index.html",
+    "build": "node bundle.js && parcel build index.html --public-url .",
     "start": "node bundle.js && parcel index.html"
     },
   "author": "Maria Chitul",

@@ -27,17 +27,17 @@ jobs:
       - name: Add .nojekyll to dist
         run: echo > ./dist/.nojekyll
 
-      - name: Show dist contents
-        run: |
-          echo "Working directory:"
-          pwd
-          echo "Files in ./dist:"
-          ls -la ./dist
+      #- name: Show dist contents
+      #  run: |
+      #    echo "Working directory:"
+      #    pwd
+      #    echo "Files in ./dist:"
+      #    ls -la ./dist
 
-      - name: Show dist/encrypt-mode1 contents
-        run: |
-          echo "dist/encrypt-mode1.html contents:"
-          cat ./dist/encrypt-mode1.html
+      #- name: Show dist/encrypt-mode1 contents
+      #  run: |
+      #    echo "dist/encrypt-mode1.html contents:"
+      #    cat ./dist/encrypt-mode1.html
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
