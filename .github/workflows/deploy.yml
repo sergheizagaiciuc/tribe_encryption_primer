@@ -22,7 +22,7 @@ jobs:
         run: yarn install
 
       - name: Build project
-        run: yarn bundle && yarn build 
+        run: yarn build 
 
       - name: Add .nojekyll to dist
         run: echo > ./dist/.nojekyll
