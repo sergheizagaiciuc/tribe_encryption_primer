@@ -34,10 +34,10 @@ jobs:
           echo "Files in ./dist:"
           ls -la ./dist
 
-      - name: Show encrypt-mode1 contents
+      - name: Show dist/encrypt-mode1 contents
         run: |
-          echo "encrypt-mode1.html contents:"
-          cat encrypt-mode1.html
+          echo "dist/encrypt-mode1.html contents:"
+          cat ./dist/encrypt-mode1.html
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
